@@ -63,4 +63,3 @@ if __name__ == '__main__':
 
 
 
-# Dans la fonction meilleur_invest, la façon de trier rendements a été modifiée. Dans optimized_perso.py, rendements est trié en fonction de x[1] (le rendement) en ordre décroissant. Dans optimized2_perso.py, rendements est trié en fonction du ratio rendement/coût (x[1] / x[2]) en ordre décroissant
