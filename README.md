@@ -41,3 +41,29 @@ a) Calcul du rendement de chaque action : L'algorithme commence par calculer le 
 b) Tri des actions par rendement par rapport au coût : Ensuite, l'algorithme trie les actions par rapport au rapport entre leur rendement et leur coût. Cela signifie que les actions les plus rentables se retrouvent en tête de liste.
 
 c) Sélection des actions les plus rentables dans le budget : Enfin, l'algorithme parcourt la liste triée des actions et sélectionne les actions les plus rentables, tant que le budget disponible le permet. Ainsi, il choisit directement les actions offrant le meilleur rapport rendement/coût sans avoir besoin de générer toutes les combinaisons possibles.
+
+Knapsack
+Titre: Maximisation du profit d'investissement avec l'algorithme du sac à dos
+
+Description:
+L'algorithme du sac à dos est une méthode classique en programmation dynamique permettant de résoudre des problèmes d'optimisation. Dans ce contexte, il est utilisé pour maximiser le profit d'un investissement dans des actions, tout en respectant un budget donné. Le fichier CSV contient des données sur les actions disponibles, notamment leur nom, leur prix et leur profit potentiel. L'algorithme utilise une approche tabulaire pour déterminer le profit maximal possible pour un budget donné et retrouve ensuite les actions spécifiques qui ont été incluses dans cette solution optimale.
+
+Utilisation:
+
+Assurez-vous que le fichier CSV contenant les données sur les actions est correctement formaté avec les colonnes "Nom", "Prix" et "Profit" dans cet ordre.
+Lancez le script Python et suivez les instructions pour entrer le nom du fichier CSV et le budget maximum.
+L'algorithme affichera les actions optimales à acheter, le coût total de l'investissement et le profit maximal attendu.
+Cas d'utilisation:
+
+L'algorithme convient aux investisseurs qui veulent une solution optimale pour investir un budget fixe dans un ensemble d'actions afin de maximiser les retours.
+Les gestionnaires de fonds qui cherchent à diversifier leur portefeuille tout en maximisant le profit peuvent également bénéficier de cette méthode.
+Les investisseurs individuels avec un budget limité trouveront cet algorithme utile pour prendre des décisions d'investissement éclairées.
+Points clés:
+
+a) Programmation dynamique : L'algorithme utilise une table pour stocker les résultats intermédiaires, ce qui réduit le temps de calcul en évitant de recalculer les mêmes résultats.
+
+b) Conversion en centimes : Pour éviter les erreurs d'arrondi, toutes les valeurs monétaires sont converties en centimes pour les calculs.
+
+c) Récupération des actions sélectionnées : Une fois la table remplie, l'algorithme parcourt la table à rebours pour déterminer les actions spécifiques qui ont été incluses dans la solution optimale.
+
+d) Efficacité : Contrairement à l'approche de force brute qui génère toutes les combinaisons possibles, l'algorithme du sac à dos est plus efficace car il utilise une approche tabulaire pour résoudre le problème. Pour un ensemble de n actions et un budget W, sa complexité est de O(nW).
