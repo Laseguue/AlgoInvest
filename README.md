@@ -15,6 +15,8 @@ Cas d'utilisation:
 L'algorithme convient aux investisseurs cherchant à maximiser leur profit en achetant un portefeuille d'actions avec un budget donné.
 Il est utile pour les gestionnaires de fonds cherchant à identifier les meilleures actions à inclure dans un portefeuille d'investissement avec des contraintes budgétaires.
 Les investisseurs individuels qui souhaitent diversifier leur portefeuille avec un budget limité peuvent également utiliser cet algorithme pour prendre des décisions éclairées.
+ex : 
+10 actions, l'algorithme doit générer 2^10 (1024) combinaisons possibles. Avec 20 actions, il doit en générer 2^20 (1,048,576).
 
 - Optimized 
 
@@ -33,3 +35,9 @@ Cas d'utilisation:
 Cet algorithme est particulièrement utile pour les investisseurs qui souhaitent maximiser leur rendement sur investissement en priorisant les actions offrant les meilleurs pourcentages de rendement.
 Il est adapté aux investisseurs qui ont un budget fixe et qui cherchent à constituer un portefeuille d'actions avec les meilleures opportunités de rendement.
 Les investisseurs soucieux de leur rendement à long terme peuvent utiliser cet algorithme pour prendre des décisions d'investissement éclairées et équilibrées.
+ex: 
+a) Calcul du rendement de chaque action : L'algorithme commence par calculer le rendement de chaque action en multipliant le prix de l'action par son pourcentage de profit potentiel. Ainsi, nous obtenons une mesure directe de la rentabilité de chaque action.
+
+b) Tri des actions par rendement par rapport au coût : Ensuite, l'algorithme trie les actions par rapport au rapport entre leur rendement et leur coût. Cela signifie que les actions les plus rentables se retrouvent en tête de liste.
+
+c) Sélection des actions les plus rentables dans le budget : Enfin, l'algorithme parcourt la liste triée des actions et sélectionne les actions les plus rentables, tant que le budget disponible le permet. Ainsi, il choisit directement les actions offrant le meilleur rapport rendement/coût sans avoir besoin de générer toutes les combinaisons possibles.
